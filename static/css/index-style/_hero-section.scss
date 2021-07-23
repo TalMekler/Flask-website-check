@@ -1,0 +1,65 @@
+.hero-section {
+    background: url('/static/imgs/landing-page-bg.png');
+    background-position: fixed;
+    background-color: rgba(black, .925);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+
+    &__header {
+        font-size: rem(65);
+        font-weight: 600;
+        letter-spacing: rem(2);
+
+        .colored {
+            color: rgb(181, 106, 0);
+        }
+    }
+    &__sub-header {
+        font-size: rem(24);
+        transform: translateY(rem(-15));
+        margin-bottom: rem(20);
+
+        .colored {
+            color: rgb(181, 106, 0);
+        }
+    }
+
+    &__list {
+        text-align: start;
+        list-style-position: inside;
+        list-style: disc;
+        font-size: rem(18);
+        display: grid;
+        gap: rem(15);
+        margin-bottom: rem(50);
+    }
+
+    &__cta {
+        background-color: rgb(181, 106, 0);
+        text-align: center;
+        font-size: rem(19);
+        font-weight: 600;
+        width: fit-content;
+        margin: 0 auto;
+        padding: rem(8) rem(50);
+        border-radius: rem(30);
+        cursor: pointer;
+        border: rem(2) solid transparent;
+        transition: 250ms ease;
+        letter-spacing: rem(2.5);
+
+        &:hover {
+            border: rem(2) solid rgb(181, 106, 0);
+            background-color: transparent;
+            color: rgb(181, 106, 0);
+        }
+    }
+}

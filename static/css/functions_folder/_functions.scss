@@ -1,0 +1,4 @@
+@function rem($width){
+    $width: $width / 16;
+    @return $width * 1rem;
+}

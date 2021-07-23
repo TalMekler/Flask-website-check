@@ -1,0 +1,26 @@
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #343434;
+    padding: rem(7.5) 2rem;
+
+    .credit {
+        direction: rtl;
+        color: white;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+
+            .colored {
+                color: rgb(216, 166, 0);
+                transition: all 250ms ease;
+                &:hover {
+                    filter: brightness(.8);
+                }
+            }
+        }
+    }
+}

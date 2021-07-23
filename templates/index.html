@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+<!-- {% block title %}Home Page{% endblock %} -->
+
+{% block css %}
+<link rel="stylesheet" href=" {{ url_for('static', filename='css/index_style.css') }}">
+{% endblock %}
+
+{% block content %}
+<section id="hero-section" class="hero-section">
+    <div class="hero-section__header">
+        י.ר <span class="colored">שכר</span>
+    </div>
+    <div class="hero-section__sub-header">
+        <span class="colored">שירותי חשבות שכר</span> במיקור חוץ
+    </div>
+    <ul class="hero-section__list">
+        <li class="hero-section__list__item">
+            חשבות שכר בתוכנת בניה ויישום הסכמי נוכחות
+        </li>
+        <li class="hero-section__list__item">
+            ליווי אישי ומקצועי לאורך כל הדרך
+        </li>
+        <li class="hero-section__list__item">
+            גישה ישירה לנתוני השכר והנוכחות אונליין מכל מקום ובכל רגע נתון!
+        </li>
+    </ul>
+    <div class="hero-section__cta">
+        דברו איתנו
+    </div>
+</section>
+{% endblock %}
